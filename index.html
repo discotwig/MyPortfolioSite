@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryan Bishop | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Raleway', sans-serif;
+            background: #ffffff;
+            color: #333;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .headshot {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: linear-gradient(to right, #007AFF, #FF2D55);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        h2 {
+            margin-bottom: 1rem;
+        }
+
+        .personal-info {
+            max-width: 600px;
+            margin: 0 auto 2.5rem;
+        }
+
+        .personal-info p {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 0.5rem;
+        }
+
+        .personal-info a {
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .personal-info a:hover {
+            color: #0056b3;
+        }
+
+        .projects-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .project-item {
+            width: 100%;
+            max-width: 500px;
+            /* Restrict max-width to keep cards compact */
+            background: #f2f2f2;
+            padding: 1.5rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(255, 128, 192, 0.4);
+        }
+
+        .project-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            margin-bottom: 1rem;
+        }
+
+        .project-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(to right, #007AFF, #FF2D55);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: color 0.3s ease;
+        }
+
+        .project-title:hover {
+            color: #e05858;
+        }
+
+        .project-description {
+            font-size: 1.1rem;
+            color: #444;
+            margin-bottom: 0.5rem;
+        }
+
+        .project-stack {
+            font-size: 0.9rem;
+            color: #444;
+            margin-bottom: 0.5rem;
+        }
+
+        .github-link {
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: 0.9rem;
+            transition: color 0.3s ease;
+        }
+
+        .github-link:hover {
+            color: #0056b3;
+        }
+
+        footer {
+            margin-top: 2rem;
+            text-align: center;
+            padding-top: 1rem;
+            border-top: 1px solid #ddd;
+            font-size: 0.9rem;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="public/headshot.jpg" alt="Ryans Headshot" class="headshot">
+    <h1>Ryan Bishop</h1>
+    <h2>Cybersecurity Architect</h2>
+    <div class="personal-info">
+        <p>This is my project portfolio.</p>
+        <p>Connect with me on <a href="https://www.linkedin.com/in/bishopryant" target="_blank">LinkedIn</a>.
+        </p>
+    </div>
+
+    <!-- Projects List -->
+    <div class="projects-list">
+        <div class="project-item">
+            <img src="public/golfclubdealtrackerwoods.png" alt="Golf Club Deal Tracker Screenshot">
+            <a href="https://www.golfclubdealtracker.com/" class="project-title" target="_blank">Golf Club Deal Tracker | 2023</a>
+            <h3 class="project-description">Find best deals on preowned golf clubs.</h3>
+            <p class="project-description"><i>Serverless price aggregator with affiliate links.</i></p>
+            <p class="project-stack"><strong>Stack:</strong> Next.js, Lambda, DDB, SQS, SAM</p>
+            <a href="https://github.com/yourusername/project2" class="github-link" target="_blank">View Source</a>
+        </div>
+        <div class="project-item">
+            <img src="public/picborderer.png" alt="PicBorderer Screenshot">
+            <a href="https://picborderer.bishopryant.com/home" class="project-title" target="_blank">Pic Borderer | 2024</a>
+            <h3 class="project-description">Celebrate culture with headshots borders.</h3>
+            <p class="project-description"><i>Client-side image transposer. Made for SailPoint DE&I.</i></p>
+            <p class="project-stack"><strong>Stack:</strong> Svelte</p>
+            <a href="https://github.com/yourusername/project1" class="github-link" target="_blank">View Source</a>
+        </div>
+        <div class="project-item">
+            <img src="" alt="ElectIQ Screenshot">
+            <a href="#" class="project-title" target="_blank">ElectIQ | 2024</a>
+            <h3 class="project-description">Make informed votes with facts on candidates.</h3>
+            <p class="project-description"><i>Political data aggregator. First mobile app.</i></p>
+            <p class="project-stack"><strong>Stack:</strong> Expo</p>
+            <a href="https://github.com/yourusername/project1" class="github-link" target="_blank">View Source</a>
+        </div>
+        <div class="project-item">
+            <img src="" alt="SweetRoll Seasons Screenshot">
+            <a href="#" class="project-title" target="_blank">SweetRoll™ Seasons | 2022</a>
+            <h3 class="project-description">Group digital marketing campaigns by seasons.</h3>
+            <p class="project-description"><i>Tracks across search and social channels.</i></p>
+            <p class="project-stack"><strong>Stack:</strong> React, Spring Boot, MySQL, Kafka, Elastic </p>
+            <a href="https://github.com/yourusername/project1" class="github-link" target="_blank">View Source</a>
+        </div>
+        <div class="project-item">
+            <img src="public/firstpersonalpage.png" alt="First Personal Site Screenshot">
+            <a href="https://www.bishopryant.com/home" class="project-title" target="_blank">First Personal Site | 2019</a>
+            <p class="project-description">Learned CSS and went all in.</p>
+            <p class="project-stack"><strong>Stack:</strong> HTML, CSS, JavaScript</p>
+            <a href="https://github.com/yourusername/project1" class="github-link" target="_blank">View Source</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Ryan Bishop. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
